@@ -3,13 +3,14 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import logo from '../assets/logo.png'
 
 
 function Navs() {
   return (
     <Navbar fixed="top" bg="light" expand="lg" className='Navs'>
       <Container fluid>
-        <Navbar.Brand href="#">The-Shepherd</Navbar.Brand>
+        <Navbar.Brand href="#"><img src={logo}/></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -22,13 +23,9 @@ function Navs() {
             <Nav.Link href="#action2">Songs</Nav.Link>
           </Nav>
           <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
+          <Nav.Link href="#action2">Contact</Nav.Link>
+          <Nav.Link href="#action2">Support</Nav.Link>
+           
           </Form>
         </Navbar.Collapse>
       </Container>

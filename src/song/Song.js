@@ -1,3 +1,9 @@
+import FloatingLabel from 'react-bootstrap/FloatingLabel';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+
+
+
 
 function Lyrics() {
 
@@ -43,7 +49,17 @@ function Lyrics() {
     
       
       return (
-        <div>
+        <div className='songlist'>
+          <FloatingLabel
+        controlId="floatingInput"
+        label="Search a song ..."
+        
+      >
+        <Form.Control type="email" placeholder="search" />
+        <Button variant="primary">Search</Button>
+
+      </FloatingLabel>
+      
           {songList}
           
         </div>
